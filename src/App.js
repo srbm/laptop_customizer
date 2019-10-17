@@ -42,12 +42,10 @@ class App extends Component {
   };
 
   render() {
-    
     const total = Object.keys(this.state.selected).reduce(
       (acc, curr) => acc + this.state.selected[curr].cost,
       0
     );
-
     return (
       <div className="App">
         <header>
